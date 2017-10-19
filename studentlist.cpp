@@ -27,7 +27,7 @@ void deletestruct(vector<name*>*);
 int main ()
 {
   cout << "This is Student List, which is currently studentless" << endl;
-  vector<name*>* namel;//Creates a vector pointing to all the struct names
+  vector<name*>* namel = new vector<name*>();//Creates a vector pointing to all the struct names
   bool running = true;
   while (running) {
     cout << "Please input a command. Valid comands include ADD, PRINT, DELETE, and QUIT" << endl;
